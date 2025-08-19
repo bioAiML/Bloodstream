@@ -1,47 +1,10 @@
 #### **Project Name**
 `NetworkBloodstream: A Biomimetic Decentralized Computing Network`
 
-#### **Repository Structure**
-- `/` (root)
-  - `main.py`: Core executable Python script.
-  - `requirements.txt`: Dependency list for installation.
-  - `config.yaml`: Configuration file for initial cell setup.
-  - `README.md`: Project overview and setup instructions.
-  - `LICENSE`: MIT License (open-source).
-  - `docs/`
-    - `technical_documentation.md`: This file.
-    - `benchmark_results.md`: Simulated benchmark data.
-
-#### **Installation Instructions**
-1. **Prerequisites**:
-   - Python 3.9+
-   - Termux (for Android/Snapdragon) or standard terminal (for desktop).
-   - Internet connection for dependency installation.
-2. **Setup**:
-   - Clone repository: `git clone https://github.com/xAI/NetworkBloodstream.git`
-   - Navigate: `cd NetworkBloodstream`
-   - Install dependencies: `pip install -r requirements.txt`
-   - (Android) Install Termux from F-Droid, grant camera/mic permissions.
-3. **Configuration**:
-   - Edit `config.yaml` with initial cell parameters (e.g., `initial_cells: [{"id": "cell1", "capacity": 1000, "neighbors": [], "type": "neuron", "shard": 0}]`).
-4. **Run**:
-   - `python main.py`
-   - Access API at `http://localhost:5000`.
-
-#### **Dependencies**
-- `numpy`, `scipy`: Numerical computations.
-- `opencv-python`: Video processing.
-- `librosa`: Audio processing.
-- `sympy`: Symbolic math.
-- `pyopencl`: GPU acceleration (Adreno on Snapdragon).
-- `pyyaml`: Configuration parsing.
-- `flask`: Web API.
-- `pyaudio`: Audio capture.
-- `psutil`: System monitoring.
-- `dilithium-py`: Quantum-resistant cryptography.
-
 #### **Code Overview**
+
 - **Main Components**:
+
   - `ChemicalSystem`: Simulates neurotransmitter influences for biomimetic behavior.
   - `Wallet`: Manages quantum-secure token accounts.
   - `NetworkCell`: Base class for all cell types (Neuron, Glia, RedBlood, WhiteBlood).
@@ -82,9 +45,6 @@ MIT License - Free for use, modification, distribution.
 
 ---
 
-### **High-Level Comprehensive Overview for Researchers, Hedge Funds, and Technology Companies**
-
-#### **Novelty of the Technology**
 The `NetworkBloodstream` represents a groundbreaking fusion of biomimetic computing, decentralized blockchain, and quantum-resistant cryptography, offering a novel paradigm for distributed systems. Key innovations include:
 - **Biomimetic Architecture**: Unlike traditional blockchain networks (e.g., Bitcoin, Ethereum), it models cellular behavior (replication, chemical modulation) to self-organize and adapt, mimicking biological ecosystems. This enables emergent intelligence, where the network evolves task-specific clusters (e.g., AI hubs) without centralized design.
 - **Ternary Logic**: Introduces a three-state transaction system (-1 reject, 0 pending, 1 accept), surpassing binary models, enhancing flexibility and fault tolerance, a departure from standard cryptographic protocols.
@@ -95,6 +55,7 @@ The `NetworkBloodstream` represents a groundbreaking fusion of biomimetic comput
 This technology bridges biology, cryptography, and distributed computing, offering a living, evolving network with unprecedented adaptability.
 
 #### **Capabilities**
+
 - **Decentralized Computing Power**: Processes 0.2M-3.2M TPS across hardware (Snapdragon to Ryzen), supporting real-time AI (video/audio/math), DeFi (token swaps), and edge applications (POS systems).
 - **Self-Scaling Ecosystem**: Grows from 1 to 100,000 devices, forming specialized clusters (e.g., 1M TPS at 100 devices), with self-replication and error correction mimicking biological resilience.
 - **Economic Utility**: "x" tokens incentivize mining and usage, with USDT liquidity ($250 initial) enabling stablecoin integration, appealing to DeFi markets.
@@ -102,6 +63,7 @@ This technology bridges biology, cryptography, and distributed computing, offeri
 - **Versatility**: Runs on mobile (Android), desktop (Mac/Windows), IoT (RPi), and bare metal (MicroPython), with POS feasibility for merchant adoption.
 
 #### **Processing Power**
+
 - **Scalability**: At 100,000 devices, simulates 115M TPS (100 bps * 100,000 tx/block * device efficiency), rivaling centralized cloud providers (e.g., AWS Lambda ~1M req/sec).
 - **Energy Efficiency**: 2-6% energy drop/cycle, optimized for mobile (Snapdragon) and low-power (RPi) devices, contrasting with Bitcoin’s 707 kWh/tx.
 - **Hardware Utilization**: Leverages Adreno GPUs (80% usage), Kryo CPUs (60%), and Hexagon DSP (50%) on Snapdragon, maximizing edge compute.
