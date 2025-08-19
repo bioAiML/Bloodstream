@@ -1,0 +1,71 @@
+initial_cells:
+  - id: neuron1
+    type: PythonNeuron
+    capacity: 1000
+    neighbors: ["neuron2"]
+    shard: 0
+  - id: neuron2
+    type: JavaScriptNeuron
+    capacity: 1000
+    neighbors: ["neuron1"]
+    shard: 1
+  - id: neuron3
+    type: JavaNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 2
+  - id: neuron4
+    type: CPlusPlusNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 3
+  - id: neuron5
+    type: CSharpNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 4
+  - id: neuron6
+    type: TypeScriptNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 5
+  - id: neuron7
+    type: PHPNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 6
+  - id: neuron8
+    type: SwiftNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 7
+  - id: neuron9
+    type: RNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 8
+  - id: neuron10
+    type: GoNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 9
+  - id: neuron11
+    type: HTMLNeuron
+    capacity: 1000
+    neighbors: []
+    shard: 10
+  - id: glia1
+    type: Glia
+    capacity: 500
+    neighbors: ["neuron1"]
+    shard: 0
+  - id: red1
+    type: RedBlood
+    capacity: 2000
+    neighbors: ["neuron2"]
+    shard: 1
+  - id: white1
+    type: WhiteBlood
+    capacity: 500
+    neighbors: ["neuron3"]
+    shard: 2
